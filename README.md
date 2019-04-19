@@ -1,3 +1,6 @@
+# View Live Demo
+Log on to [https://github-dist.firebaseapp.com](https://github-dist.firebaseapp.com/)
+
 # GithubDistribution
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.9.
