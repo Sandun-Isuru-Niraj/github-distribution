@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    height:1000px;
+    background:#475d62 url("./assets/star-sky.jpg");
+    background-size:cover;
+    position:relative;
+  }

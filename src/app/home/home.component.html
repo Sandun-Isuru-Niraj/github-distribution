@@ -1,0 +1,39 @@
+<div>
+  <div class="row" style="padding-top:50px; margin-right: 0px;">
+    <div class="col-lg-1">
+
+    </div>
+    <div class="col-lg-3">
+      <div class="card" *ngIf="user">
+        <img src="{{user.avatar_url}}" class="card-img-top" alt="...">
+        <div class="card-img-overlay" *ngIf="user.plan.name == 'pro'">
+          <p class="card-text"><span class="badge badge-pill badge-info"><i class="fas fa-user-tie"></i> Pro</span></p>
+        </div>
+        <div class="card-body">
+          <p><strong>Name: </strong> {{user.name}}</p>
+          <p><strong>Location: </strong> {{user.location}}</p>
+          <p><strong>Email: </strong> {{user.email}}</p>
+          <p><strong>Private : </strong> {{user.total_private_repos}} | <strong>Public : </strong> {{user.public_repos}}
+          </p>
+        </div>
+
+        <div class="row" style="margin: 10px">
+          <div class="col">
+            <a href="https://github.com/{{user.login}}" class="btn btn-block btn-primary"><i
+                class="fab fa-github-square"></i> Profile</a>
+          </div>
+          <div class="col">
+            <button (click)="onLogout()" class="btn btn-block btn-danger"><i class="fas fa-sign-out-alt"></i>
+              Logout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-8">
+      <div *ngIf="chart">
+        <canvas id="canvas">{{ chart }}</canvas>
+      </div>
+
+    </div>
+  </div>
+</div>
