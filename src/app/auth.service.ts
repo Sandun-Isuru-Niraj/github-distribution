@@ -17,8 +17,8 @@ export class AuthService {
     let options = { headers: headers };
 
     let data = {
-      client_id : "GITHUB CLIENT ID",
-      client_secret: "GITHUB CLIENT SECRET",
+      client_id : "52bbdfe302d460b5ad96",
+      client_secret: "3bab931bd7c9c39538a71fc2be3b6354a4df2bb9",
       code: accessCode
     }
 

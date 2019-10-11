@@ -14,13 +14,14 @@ export class HomeComponent implements OnInit {
 
   user: object;
   chart = [];
+  alertify: any;
 
   constructor(private data: DataService, private router: Router) { }
 
   ngOnInit() {
-
     this.getAuthenticatedUser();
     this.getAllRepositoriesbyUser();
+    
     
 
   }
